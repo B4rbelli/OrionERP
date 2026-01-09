@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configuração Padrão (Light Mode - Preservada) */
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+/* Scrollbar Bonita */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================================
+   MODO ESCURO PROFISSIONAL (DARK MODE) 
+   ========================================= */
+
+/* 1. Fundo Geral e Texto Base */
+.dark body {
+  background-color: #0f172a !important; /* Slate 900 */
+  color: #f8fafc !important;            /* Slate 50 */
+}
+
+/* 2. Cartões, Modais e Tabelas (Fundo Branco vira Cinza Escuro) */
+.dark .bg-white {
+  background-color: #1e293b !important; /* Slate 800 */
+  border-color: #334155 !important;     /* Slate 700 (Bordas) */
+  color: #f1f5f9 !important;
+}
+
+/* 3. Áreas Secundárias (Cabeçalho de Tabela, Inputs, Fundos Claros) */
+.dark .bg-slate-50, 
+.dark .bg-slate-100 {
+  background-color: #0f172a !important; /* Slate 900 */
+  color: #cbd5e1 !important;
+  border-color: #334155 !important;
+}
+
+/* 4. Inputs, Selects e Textareas */
+.dark input, 
+.dark select,
+.dark textarea {
+  background-color: #020617 !important; /* Slate 950 (Bem escuro) */
+  border-color: #334155 !important;
+  color: white !important;
+}
+
+/* 5. CORREÇÃO DE TEXTOS QUE SOMEM */
+/* Transforma textos escuros em claros */
+.dark .text-slate-900,
+.dark .text-slate-800, 
+.dark .text-slate-700,
+.dark .text-slate-600 {
+  color: #e2e8f0 !important; /* Slate 200 */
+}
+
+/* Transforma textos cinza médio em cinza claro */
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #94a3b8 !important; /* Slate 400 */
+}
+
+/* 6. CORREÇÃO DAS ETIQUETAS (BADGES) COLORIDAS */
+/* Adapta as cores de fundo claro para versões escuras e legíveis */
+
+/* Vermelho (Ex: Estoque Baixo) */
+.dark .bg-red-50, .dark .bg-red-100 { 
+  background-color: #450a0a !important; 
+  color: #fca5a5 !important; 
+  border: 1px solid #7f1d1d;
+}
+.dark .text-red-600, .dark .text-red-500 { color: #fca5a5 !important; }
+
+/* Verde (Ex: Entrada) */
+.dark .bg-green-50, .dark .bg-green-100 { 
+  background-color: #052e16 !important; 
+  color: #86efac !important; 
+  border: 1px solid #14532d;
+}
+.dark .text-green-600, .dark .text-green-700 { color: #86efac !important; }
+
+/* Azul (Ex: Info) */
+.dark .bg-blue-50, .dark .bg-blue-100 { 
+  background-color: #172554 !important; 
+  color: #93c5fd !important; 
+  border: 1px solid #1e3a8a;
+}
+.dark .text-blue-600 { color: #93c5fd !important; }
+
+/* Amarelo/Laranja (Ex: Saída) */
+.dark .bg-orange-50, .dark .bg-orange-100,
+.dark .bg-yellow-50, .dark .bg-yellow-100 { 
+  background-color: #431407 !important; 
+  color: #fdba74 !important; 
+  border: 1px solid #7c2d12;
+}
+.dark .text-orange-700, .dark .text-yellow-700 { color: #fdba74 !important; }
+
+/* Indigo (Botões) */
+.dark .bg-indigo-50 { background-color: #1e1b4b !important; color: #a5b4fc !important; }
+.dark .hover\:bg-indigo-50:hover { background-color: #312e81 !important; }
+
+/* 7. Bordas Gerais */
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+/* 8. Scrollbar no Dark Mode */
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
