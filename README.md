@@ -12,8 +12,6 @@
 
 O **Orion ERP** foi desenvolvido para simplificar a gestão de estoque, vendas e finanças. Com uma interface limpa ("Clean UI"), suporte a **Modo Escuro** e funcionamento Offline (Local Storage), ele é ideal para quem precisa de agilidade no dia a dia.
 
-*(Coloque aqui um print da tela do Dashboard)*
-
 ---
 
 ## 🚀 Funcionalidades Principais
