@@ -1,16 +1,74 @@
-# React + Vite
+# 📦 Orion | ERP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Um sistema de gestão completo, moderno e responsivo para mercados e pequenos comércios. Executa 100% no navegador.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🖼️ Visão Geral
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O **Orion ERP** foi desenvolvido para simplificar a gestão de estoque, vendas e finanças. Com uma interface limpa ("Clean UI"), suporte a **Modo Escuro** e funcionamento Offline (Local Storage), ele é ideal para quem precisa de agilidade no dia a dia.
 
-## Expanding the ESLint configuration
+*(Coloque aqui um print da tela do Dashboard)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Funcionalidades Principais
+
+### 🛒 Frente de Caixa (PDV)
+* Interface ágil focada em vendas rápidas.
+* Suporte a produtos por unidade (UN) ou peso (KG) com pop-up de pesagem.
+* Carrinho de compras dinâmico.
+* **Impressão de Cupom** não fiscal (formato térmico).
+
+### 📦 Gestão de Inventário
+* Controle completo de estoque (Entradas e Saídas).
+* Alertas visuais de **Validade** (Vencido/Vence em Breve).
+* Alertas de **Estoque Baixo**.
+* Cadastro de Fornecedores e Categorias dinâmicas.
+
+### 💰 Financeiro & Relatórios
+* Dashboard com indicadores de faturamento e lucro.
+* Gráficos visuais de fluxo de caixa.
+* **Exportação Avançada para Excel (.xlsx)** com filtros por período.
+* Geração automática de **Lista de Compras/Reposição** baseada no estoque mínimo (com envio para WhatsApp).
+
+### ⚙️ Sistema & Configurações
+* **Dark Mode** (Modo Noturno) profissional integrado.
+* **Backup e Restauração:** Exporte seus dados para JSON e leve para outro computador.
+* Login com níveis de acesso (Admin/Caixa).
+
+---
+
+## 🔐 Acesso (Login)
+
+Como o sistema roda localmente, utilizamos PINs pré-definidos para simular a autenticação:
+
+| Perfil | PIN | Permissões |
+| :--- | :--- | :--- |
+| **Administrador** | `1234` | Acesso total (Configurações, Edição, Financeiro) |
+| **Caixa** | `0000` | Acesso restrito (Apenas PDV e visualização básica) |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **React (Vite):** Core da aplicação.
+* **Tailwind CSS:** Estilização responsiva e Dark Mode.
+* **Context API:** Gerenciamento de estado global (Banco de dados em memória).
+* **Lucide React:** Ícones modernos e leves.
+* **SheetJS (xlsx):** Geração de relatórios em Excel.
+* **Local Storage:** Persistência de dados no navegador.
+
+---
+
+## 💻 Como Rodar o Projeto
+
+Pré-requisitos: Você precisa ter o [Node.js](https://nodejs.org/) instalado.
+
+1. **Clone o repositório** (ou baixe os arquivos):
+   ```bash
+   git clone [https://github.com/seu-usuario/orion-erp.git](https://github.com/seu-usuario/orion-erp.git)
